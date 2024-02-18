@@ -2,6 +2,8 @@
 
 -Create react app
 -Configured Tailwind
+-Header
+-Login in form
 
 # Features
 
