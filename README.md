@@ -8,6 +8,8 @@
 -Sign up form
 -Form Validation
 -useRef Hook
+-Firebase setup
+-Deploying our app to production
 
 # Features
 
@@ -21,6 +23,9 @@ b)Main movie
 -Tailer in background
 -Title & description
 -Movie Sugguestions: Movie Lists\*N
+
+Project Console: https://console.firebase.google.com/project/netflixgpt-f427b/overview
+Hosting URL: https://netflixgpt-f427b.web.app
 
 3)Netflix GPT
 a)Search bar
