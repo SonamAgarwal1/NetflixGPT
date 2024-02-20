@@ -1,9 +1,11 @@
 import { signOut } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const navigate = useNavigate();
+  const user = useSelector((store) => store.user);
   const handleSignOut = () => {
     signOut(auth)
       .then(() => {
@@ -23,16 +25,14 @@ const Header = () => {
           src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
           alt="Logo"
         />
-        <div className="p-2 z-10 flex right-0">
-          <img
-            className="w-12 h-12"
-            src="https://lh3.googleusercontent.com/a/ACg8ocLGpU8UuJ2LoUYHCCYljZ4RVTSnhsRnGO0AcB9Rs98T31B5=s432-c-no"
-            alt="userImage"
-          />
-          <button className="font-bold text-white" onClick={handleSignOut}>
-            Sign Out
-          </button>
-        </div>
+        {user && (
+          <div className="p-2 z-10 flex right-0">
+            <img className="w-12 h-12" src={user?.photoURL} alt="userImage" />
+            <button className="font-bold text-white" onClick={handleSignOut}>
+              Sign Out
+            </button>
+          </div>
+        )}
       </div>
     </>
   );
