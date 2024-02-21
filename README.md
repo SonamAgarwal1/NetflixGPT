@@ -17,6 +17,8 @@
 -Upadate profile
 -Bug Fix:Sign up user displayName and profile picture update
 -Bug Fix:If the user is not logged in redirect/browse to login page and vice-versa
+-Unsubscribed to the onAuthStateChanged callback
+-Add hardcoded values to the constants file
 -Fetch movie from TMDB
 
 # Features
