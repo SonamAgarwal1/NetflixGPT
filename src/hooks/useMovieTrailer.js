@@ -4,7 +4,6 @@ import { addTrailerVideo } from "../utils/moviesSlice";
 import { useEffect } from "react";
 
 const useMovieTrailer = (movieId) => {
-  console.log(movieId);
   const dispatch = useDispatch();
 
   //fetching the trailer video and updating the store
@@ -18,7 +17,6 @@ const useMovieTrailer = (movieId) => {
       (data) => data?.type === "Trailer"
     );
     const trailer = filteredData?.length ? filteredData[0] : json?.results[0];
-    console.log(trailer);
     dispatch(addTrailerVideo(trailer));
   };
   useEffect(() => {
