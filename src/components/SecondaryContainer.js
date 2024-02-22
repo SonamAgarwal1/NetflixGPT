@@ -1,4 +1,10 @@
+import MovieList from "./MovieList";
+
 const SecondaryContainer = () => {
-  return <div>SecondaryContainer</div>;
+  return (
+    <div>
+      <MovieList />
+    </div>
+  );
 };
 export default SecondaryContainer;
