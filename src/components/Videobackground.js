@@ -5,11 +5,10 @@ import useMovieTrailer from "../hooks/useMovieTrailer";
 const Videobackground = ({ movieId }) => {
   const trailerVideo = useSelector((store) => store.movies?.trailerVideo);
   useMovieTrailer(movieId);
-  console.log(trailerVideo?.key);
   return (
-    <div class="relative w-full -z-10 pb-[56.25%]">
+    <div className="relative w-full  pb-[56.25%]">
       <iframe
-        class="absolute top-0 left-0 w-full h-full"
+        className="absolute top-0 left-0 w-full h-full"
         src={
           "https://www.youtube.com/embed/" +
           trailerVideo?.key +
