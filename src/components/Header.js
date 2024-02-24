@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
 import { LOGO } from "../utils/constants";
+import { toggleGptSearchView } from "../utils/gptSlice";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -46,7 +47,9 @@ const Header = () => {
       });
   };
 
-  const handleGPTSearchClick = () => {};
+  const handleGPTSearchClick = () => {
+    dispatch(toggleGptSearchView());
+  };
   return (
     <>
       <div className="w-full absolute py-2 px-8 bg-gradient-to-b from-black z-50 flex justify-between">
