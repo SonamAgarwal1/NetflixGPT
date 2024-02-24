@@ -16,17 +16,20 @@ const Browse = () => {
   useUpcomingMovies();
 
   return (
-    <div className="bg-black">
-      <Header />
+    <>
       {showGptSearch ? (
-        <GptSearch />
+        <div>
+          <Header />
+          <GptSearch />
+        </div>
       ) : (
-        <>
+        <div className="bg-black">
+          <Header />
           <MainContainer />
           <SecondaryContainer />
-        </>
+        </div>
       )}
-    </div>
+    </>
   );
 };
 
