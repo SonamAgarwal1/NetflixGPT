@@ -38,6 +38,7 @@
 -usePopular movie hook
 -useTopRated movie hook
 -useUpcoming movie hook
+-chatgpt search
 
 # Features
 
@@ -52,9 +53,9 @@ b)Main movie
 -Title & description
 -Movie Sugguestions: Movie Lists\*N
 
-Project Console: https://console.firebase.google.com/project/netflixgpt-f427b/overview
-Hosting URL: https://netflixgpt-f427b.web.app
-
 3)Netflix GPT
 a)Search bar
 b)Movie sugguestion
+
+Project Console: https://console.firebase.google.com/project/netflixgpt-f427b/overview
+Hosting URL: https://netflixgpt-f427b.web.app

@@ -45,12 +45,20 @@ const Header = () => {
         navigate("/error");
       });
   };
+
+  const handleGPTSearchClick = () => {};
   return (
     <>
       <div className="w-full absolute py-2 px-8 bg-gradient-to-b from-black z-50 flex justify-between">
         <img className="w-44 z-20" src={LOGO} alt="Logo" />
         {user && (
           <div className="p-2 z-10 flex right-0">
+            <button
+              className="bg-white text-black text-lg rounded-lg mb-4 mt-2 px-2"
+              onClick={handleGPTSearchClick}
+            >
+              GPT Search
+            </button>
             <img
               className="w-12 h-12 p-2"
               src={user?.photoURL}
