@@ -1,0 +1,60 @@
+const lang = {
+  en: {
+    search: "search",
+    play: "Play",
+    moreInfo: "More Info",
+    gptSearch: "GPT Search",
+    signOut: "Sign Out",
+    gptSearchPlaceholder: "What would you like to watch today?",
+  },
+  hi: {
+    search: "खोज",
+    play: "खेल",
+    moreInfo: "और जानकारी",
+    gptSearch: "जीपीटी खोज",
+    signOut: "साइन आउट",
+    gptSearchPlaceholder: "आज आप क्या देखना चाहेंगे?",
+  },
+  es: {
+    search: "Buscar",
+    play: "Jugar",
+    moreInfo: "Más información",
+    gptSearch: "Búsqueda GPT",
+    signOut: "Desconectar",
+    gptSearchPlaceholder: "¿Qué te gustaría ver hoy?",
+  },
+  it: {
+    search: "Ricerca",
+    play: "Giocare",
+    moreInfo: "Ulteriori informazioni",
+    gptSearch: "Ricerca GPT",
+    signOut: "Disconnessione",
+    gptSearchPlaceholder: "Cosa ti piacerebbe guardare oggi?",
+  },
+  ja: {
+    search: "検索",
+    play: "遊ぶ",
+    moreInfo: "より詳しい情報",
+    gptSearch: "GPT 検索",
+    signOut: "サインアウト",
+    gptSearchPlaceholder: "今日は何を見たいですか？",
+  },
+  cn: {
+    search: "搜尋",
+    play: "玩",
+    moreInfo: "更多資訊",
+    gptSearch: "GPT 搜尋",
+    signOut: "登出",
+    gptSearchPlaceholder: "你今天想看什麼？",
+  },
+  ur: {
+    search: "تلاش کریں۔",
+    play: "کھیلیں",
+    moreInfo: "مزید معلومات",
+    gptSearch: "GPT تلاش",
+    signOut: "باہر جائیں",
+    gptSearchPlaceholder: "آج آپ کیا دیکھنا چاہیں گے؟",
+  },
+};
+
+export default lang;
