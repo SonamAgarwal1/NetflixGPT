@@ -16,6 +16,7 @@ const Header = () => {
   const dispatch = useDispatch();
   const user = useSelector((store) => store.user);
   const langKey = useSelector((store) => store.config?.lang);
+  const showGptSearch = useSelector((store) => store.gpt?.showGptSearch);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -78,7 +79,9 @@ const Header = () => {
               className="bg-white text-black text-lg rounded-lg mb-4 mt-2 px-2"
               onClick={handleGPTSearchClick}
             >
-              {lang[langKey]?.gptSearch}
+              {showGptSearch
+                ? lang[langKey]?.homePage
+                : lang[langKey]?.gptSearch}
             </button>
             <img
               className="w-12 h-12 p-2"

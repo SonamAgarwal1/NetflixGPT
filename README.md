@@ -38,7 +38,9 @@
 -usePopular movie hook
 -useTopRated movie hook
 -useUpcoming movie hook
--chatgpt search
+-GPT search Page
+-GPT search bar
+-Multi-language feature in the App
 
 # Features
 

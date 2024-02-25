@@ -10,6 +10,7 @@ const lang = {
     popular: "Popular",
     topRated: "Top Rated",
     upcoming: "Upcoming",
+    homePage: "Home Page",
   },
   hi: {
     search: "खोज",
@@ -22,6 +23,7 @@ const lang = {
     popular: "लोकप्रिय",
     topRated: "टॉप रेटेड",
     upcoming: "आगामी",
+    homePage: "होम पेज",
   },
   es: {
     search: "Buscar",
@@ -34,6 +36,7 @@ const lang = {
     popular: "Popular",
     topRated: "Los más valorados",
     upcoming: "Próxima",
+    homePage: "Página de inicio",
   },
   it: {
     search: "Ricerca",
@@ -46,6 +49,7 @@ const lang = {
     popular: "Popolare",
     topRated: "Più votati",
     upcoming: "Prossimamente",
+    homePage: "Pagina iniziale",
   },
   ja: {
     search: "検索",
@@ -58,6 +62,7 @@ const lang = {
     popular: "人気のある",
     topRated: "トップレート",
     upcoming: "今後の予定",
+    homePage: "ホームページ",
   },
   cn: {
     search: "搜尋",
@@ -70,6 +75,7 @@ const lang = {
     popular: "受歡迎的",
     topRated: "最受好評",
     upcoming: "即將推出",
+    homePage: "首頁",
   },
   ur: {
     search: "تلاش کریں۔",
@@ -82,6 +88,7 @@ const lang = {
     popular: "مقبول",
     topRated: "سب سے اوپر ریٹیڈ",
     upcoming: "آنے والا",
+    homePage: "ہوم پیج",
   },
 };
 
