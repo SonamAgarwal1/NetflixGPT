@@ -20,3 +20,13 @@ export const NOW_PLAYING_MOVIE =
   "https://api.themoviedb.org/3/movie/now_playing?page=1";
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
+
+export const SUPPORTED_LANGUAGE = [
+  { identifier: "en", name: "English" },
+  { identifier: "hi", name: "Hindi" },
+  { identifier: "es", name: "Spanish" },
+  { identifier: "it", name: "Italian" },
+  { identifier: "ja", name: "Japanese" },
+  { identifier: "cn", name: "Chinese" },
+  { identifier: "ur", name: "Urdu" },
+];

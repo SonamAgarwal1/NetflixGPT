@@ -6,7 +6,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
-import { LOGO } from "../utils/constants";
+import { LOGO, SUPPORTED_LANGUAGE } from "../utils/constants";
 import { toggleGptSearchView } from "../utils/gptSlice";
 
 const Header = () => {
@@ -56,6 +56,13 @@ const Header = () => {
         <img className="w-44 z-20" src={LOGO} alt="Logo" />
         {user && (
           <div className="p-2 z-10 flex right-0">
+            <select className="p-2 mt-2 mb-4 mx-2 rounded-lg opacity-50">
+              {SUPPORTED_LANGUAGE?.map((lang) => (
+                <option key={lang?.identifier} value={lang?.identifier}>
+                  {lang?.name}
+                </option>
+              ))}
+            </select>
             <button
               className="bg-white text-black text-lg rounded-lg mb-4 mt-2 px-2"
               onClick={handleGPTSearchClick}
