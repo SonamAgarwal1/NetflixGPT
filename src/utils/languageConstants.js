@@ -1,11 +1,15 @@
 const lang = {
   en: {
-    search: "search",
+    search: "Search",
     play: "Play",
     moreInfo: "More Info",
     gptSearch: "GPT Search",
     signOut: "Sign Out",
     gptSearchPlaceholder: "What would you like to watch today?",
+    nowPlaying: "Now Playing",
+    popular: "Popular",
+    topRated: "Top Rated",
+    upcoming: "Upcoming",
   },
   hi: {
     search: "खोज",
@@ -14,6 +18,10 @@ const lang = {
     gptSearch: "जीपीटी खोज",
     signOut: "साइन आउट",
     gptSearchPlaceholder: "आज आप क्या देखना चाहेंगे?",
+    nowPlaying: "अब खेल रहे हैं",
+    popular: "लोकप्रिय",
+    topRated: "टॉप रेटेड",
+    upcoming: "आगामी",
   },
   es: {
     search: "Buscar",
@@ -22,6 +30,10 @@ const lang = {
     gptSearch: "Búsqueda GPT",
     signOut: "Desconectar",
     gptSearchPlaceholder: "¿Qué te gustaría ver hoy?",
+    nowPlaying: "Jugando ahora",
+    popular: "Popular",
+    topRated: "Los más valorados",
+    upcoming: "Próxima",
   },
   it: {
     search: "Ricerca",
@@ -30,6 +42,10 @@ const lang = {
     gptSearch: "Ricerca GPT",
     signOut: "Disconnessione",
     gptSearchPlaceholder: "Cosa ti piacerebbe guardare oggi?",
+    nowPlaying: "Ora in riproduzione",
+    popular: "Popolare",
+    topRated: "Più votati",
+    upcoming: "Prossimamente",
   },
   ja: {
     search: "検索",
@@ -38,6 +54,10 @@ const lang = {
     gptSearch: "GPT 検索",
     signOut: "サインアウト",
     gptSearchPlaceholder: "今日は何を見たいですか？",
+    nowPlaying: "再生中",
+    popular: "人気のある",
+    topRated: "トップレート",
+    upcoming: "今後の予定",
   },
   cn: {
     search: "搜尋",
@@ -46,6 +66,10 @@ const lang = {
     gptSearch: "GPT 搜尋",
     signOut: "登出",
     gptSearchPlaceholder: "你今天想看什麼？",
+    nowPlaying: "正在播放",
+    popular: "受歡迎的",
+    topRated: "最受好評",
+    upcoming: "即將推出",
   },
   ur: {
     search: "تلاش کریں۔",
@@ -54,6 +78,10 @@ const lang = {
     gptSearch: "GPT تلاش",
     signOut: "باہر جائیں",
     gptSearchPlaceholder: "آج آپ کیا دیکھنا چاہیں گے؟",
+    nowPlaying: "اب چل رہا ہے۔",
+    popular: "مقبول",
+    topRated: "سب سے اوپر ریٹیڈ",
+    upcoming: "آنے والا",
   },
 };
 
