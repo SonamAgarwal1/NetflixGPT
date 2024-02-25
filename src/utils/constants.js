@@ -30,3 +30,5 @@ export const SUPPORTED_LANGUAGE = [
   { identifier: "cn", name: "Chinese" },
   { identifier: "ur", name: "Urdu" },
 ];
+
+export const OPENAI_KEY = "api-key";
