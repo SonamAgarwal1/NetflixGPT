@@ -32,8 +32,7 @@ const GptSearchBar = () => {
     // });
 
     // Results which openai going to return(gptResults?.choices?.[0]?.message?.content);
-    const dummy =
-      "Andaz Apna Apna, Hera Pheri, Chupke Chupke, Jaane bhi Do Yaaro, Padosan";
+    const dummy = "Andaz Apna Apna, Hera Pheri, Chupke Chupke, Raaz, Padosan";
     const gptMovies = dummy?.split(",");
     const promiseArray = gptMovies?.map((movie) => searchMovieTMDB(movie)); // We will get Promises in return as the function is async-await->[promise,promise,promise,promise,promise]
     const tmdbResults = await Promise.all(promiseArray);
