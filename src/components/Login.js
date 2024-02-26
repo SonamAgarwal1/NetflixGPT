@@ -86,14 +86,18 @@ const Login = () => {
   return (
     <>
       <Header />
-      <div className="absolute">
-        <img src={BACKGROUND_IMG} alt="background-img" />
+      <div className="fixed">
+        <img
+          className="h-screen object-cover md:h-auto"
+          src={BACKGROUND_IMG}
+          alt="background-img"
+        />
       </div>
       <form
-        className="w-4/12 absolute px-12 bg-black my-28 mx-auto right-0 left-0  text-white bg-opacity-80 rounded-md"
+        className="w-full md:w-4/12 absolute px-12 bg-black my-16 md:my-28 mx-auto right-0 left-0  text-white bg-opacity-80 rounded-md"
         onSubmit={(e) => e.preventDefault()}
       >
-        <h1 className="text-3xl font-bold py-4 px-2 rounded-lg">
+        <h1 className=" text-2xl md:text-3xl font-bold py-4 px-2 rounded-lg">
           {isSignInForm ? "Sign In" : "Sign Up"}
         </h1>
         {!isSignInForm && (
@@ -101,7 +105,7 @@ const Login = () => {
             type="text"
             ref={fullName}
             placeholder="Full Name"
-            className="p-4 my-4 w-full rounded-lg"
+            className="p-4 my-1 md:my-4 w-full rounded-lg"
             style={{ backgroundColor: "rgb(51,51,51)" }}
           />
         )}
@@ -109,24 +113,24 @@ const Login = () => {
           type="text"
           ref={email}
           placeholder="Email or phone number"
-          className="p-4 my-4 w-full rounded-lg"
+          className="p-4  my-1 md:my-4 w-full rounded-lg"
           style={{ backgroundColor: "rgb(51,51,51)" }}
         />
         <input
           type="password"
           ref={password}
           placeholder="Password"
-          className="p-4 my-4 w-full rounded-lg"
+          className="p-4 my-1 md:my-4 w-full rounded-lg"
           style={{ backgroundColor: "rgb(51,51,51)" }}
         />
         <p className="text-red-500">{errorMessage}</p>
         <button
-          className="p-4 my-4 bg-red-500 text-white w-full rounded-lg"
+          className="p-4 my-2 md:my-4 bg-red-500 text-white w-full rounded-lg"
           onClick={handleButtonClicked}
         >
           {isSignInForm ? "Sign In" : "Sign Up"}
         </button>
-        <p className="py-4 cursor-pointer" onClick={toggleSignUpForm}>
+        <p className="py-2 md:py-4 cursor-pointer" onClick={toggleSignUpForm}>
           {isSignInForm
             ? "New to Netflix? Sign Up now."
             : "Already registered? Sign In now."}
