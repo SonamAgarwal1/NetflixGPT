@@ -11,8 +11,7 @@ export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NWJiNzI3NDExODkwMDc2ZTg4NzQ2ODRhMWMwNWZhNiIsInN1YiI6IjY1ZDYwYTFmZmRmOGI3MDE3Y2M3MTYxYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TFAWEHnw_bAzpvtywyL9L7FVEH7cmT2AxwLbo4EjFYE",
+    Authorization: "Bearer " + process.env.REACT_APP_TMDB_KEY,
   },
 };
 
@@ -31,4 +30,4 @@ export const SUPPORTED_LANGUAGE = [
   { identifier: "ur", name: "Urdu" },
 ];
 
-export const OPENAI_KEY = "api-key";
+export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
